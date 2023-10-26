@@ -136,3 +136,18 @@ Typically the convention for commit messages depends on who/which company/team y
 
 This is much more description than having a commit message like "updated buttons" since we can see the starting phrase to identify what type of commit it'll be and the following message to describe the new change. We can also add comments to
 commits if we use **git commit** instead of **git commit -m \<message>**.
+
+# Installations and Running the Development Server
+In order to work with this project, you'll need to have a working version of node and npm. You can download [Node](https://nodejs.org/en) here and download npm via node (run `npm install -g npm` within the terminal). To check if you have a running version
+of node and npm, you can run this in the terminal (`node -v` and `npm -v`).
+
+Once those two have been installed, you can clone this repo (there's a Code > Local button within the Code tab to give you the https/ssh link). We will use HTTPS so we do not need to configure an SSH key. Run `git clone https://github.com/chene40/zen-nails-web.git` within your terminal of a working directory of your choice (I ran this in my Desktop directory).
+
+Once you have cloned the repo, you can open VSCode (if you haven't already) and open up the cloned repo/folder.
+
+Make sure you are at the folder's root directory (e.g. Desktop/zen-nails-web) and run `npm i` to install all the node dependencies for the project.
+
+Run `npm run dev` to start the development process and open up the link that's listed in your terminal (should be something like `http://localhost:3333`).
+
+Congrats you've got everything you need! In this project, we have hot module replacement, which means that any changes you make to the code will update the page in real time. So you do not have to run any scripts to build the project and then
+re-run the development process or refresh the page. 
